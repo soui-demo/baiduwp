@@ -80,12 +80,12 @@
       </window>
       <tabctrl name="tab_file" pos="[0,0,-0,-0" animateSteps="0" tabHeight="0" cursel="0">
         <page title="方块样式">
-          <tileview pos="0,0,-0,-0" name="file_tile_view" wantTab="1" marginSize="5" colorBkgnd="#FFFFFF" sbSkin="skin_scrollbar">
+          <tileviewex pos="0,0,-0,-0" name="file_tile_view" wantTab="1" marginSize="5" colorBkgnd="#FFFFFF" sbSkin="skin_scrollbar">
             <template itemHeight="120" itemWidth="135" colorHover="#cccccc" colorSelected="#0000ff" trackMouseEvent="1" skin="skin_list_item_bkg">
               <img pos="0,0" name="tile_item_img" skin="skin_file_icon_b_foldertype" />
               <text pos="0,-33,-0,-0" name="tile_item_txt" class="cls_tile_item_name">我的文档</text>
             </template>
-          </tileview>
+          </tileviewex>
         </page>
         <page title="列表样式">
           <mclistview name="file_list_view" headerHeight="28" colorSwapLine="rgb(0,0,255)" colorDropBk="rgb(0,0,255)" pos="0,0,-0,-0" sbSkin="skin_scrollbar" sbTop="28">
