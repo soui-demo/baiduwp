@@ -27,7 +27,8 @@ HEADERS += CAdapter.h \
            res/resource.h \
            trayicon/SShellNofityHwnd2.h \
            trayicon/SShellNotifyIcon.h \
-           $(SOUIPATH)/controls.extend/SRadioBox2.h
+           $(SOUIPATH)/controls.extend/SRadioBox2.h \
+           STileViewEx.h
 
 SOURCES += baiduwp.cpp \
            MainDlg.cpp \
@@ -35,7 +36,8 @@ SOURCES += baiduwp.cpp \
            SRadioEx.cpp \
            trayicon/SShellNofityHwnd2.cpp \
            trayicon/SShellNotifyIcon.cpp \
-           $(SOUIPATH)/controls.extend/SRadioBox2.cpp  
+           $(SOUIPATH)/controls.extend/SRadioBox2.cpp  \
+           STileViewEx.cpp
 
 RC_FILE += baiduwp.rc
 RC_INCLUDEPATH+=$(SOUIPATH)/soui-sys-resource
