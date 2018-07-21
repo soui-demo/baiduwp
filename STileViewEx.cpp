@@ -1247,8 +1247,8 @@ namespace SOUI
 			GetClientRect(&rcClient);//lineWid
 			int endY = m_dragEndPos.y - rcClient.top + m_siVer.nPos;
 
-			CPoint startPos = { min(m_dragStartPos.x, m_dragEndPos.x) ,min(m_nOffset,endY) };
-			CPoint endPos = { max(m_dragStartPos.x, m_dragEndPos.x),max(m_nOffset, endY) };
+			CPoint startPos ( min(m_dragStartPos.x, m_dragEndPos.x) ,min(m_nOffset,endY) );
+			CPoint endPos ( max(m_dragStartPos.x, m_dragEndPos.x),max(m_nOffset, endY) );
 
 			startPos.x -= rcClient.left;
 			endPos.x -= rcClient.left;
