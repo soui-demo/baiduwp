@@ -16,9 +16,11 @@ namespace SOUI
 		}
 		virtual void onChanged();
 		virtual void onInvalidated();
+		virtual void OnItemChanged(int iItem) override;
 
 	protected:
 		STileViewEx * m_pOwner;
+
 	};
 
 	//////////////////////////////////////////////////////////////////////////
@@ -30,6 +32,11 @@ namespace SOUI
 	void STileViewDataSetObserverEx::onInvalidated()
 	{
 		m_pOwner->onDataSetInvalidated();
+	}
+
+	void STileViewDataSetObserverEx::OnItemChanged(int iItem)
+	{
+		
 	}
 
 
